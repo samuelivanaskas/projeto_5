@@ -4,7 +4,8 @@ import { Campos } from '../../styles'
 import * as S from './styles'
 
 const BarraLateral = () => (
-  <Campos />
+  <>
+    <Campos />
     <input type="text" placeholder="Buscar contato" />
     <S.Filtros>
       <FiltroCard legenda="contatos não salvos" contador={1} />
@@ -12,6 +13,7 @@ const BarraLateral = () => (
       <FiltroCard legenda="contatos importantes" contador={3} />
       <FiltroCard legenda="contatos urgentes" contador={4} ativo />
     </S.Filtros>
+  </>
 )
 
 export default BarraLateral
